@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Monty Python Tower Defence!</title>
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div id="welcome" class="well">
+      <h1>Monty Python Tower Defense!</h1>
+      <h4>Created by: Mark Dickinson</h4>
+      <br>
+      <button id="begin" class="btn btn-lg btn-success col-xs-6" type="button" name="begin">Begin?</button>
+      <button type="button" id="runAway" class="btn btn-lg btn-danger col-xs-6" name="runAway" autofocus>Run Away?</button>
+    </div>
+    <form id="askName" class="form well askName">
+      <div class="form-group">
+        <label for="name" class="control-label">WHAT is your name?</label>
+        <input id="name" class="form-control" type="text" name="name" required>
+      </div>
+      <button id="answerName" class="btn btn-lg btn-info btn-block" type="button" name="answerName">Answer</button>
+    </form>
+    <div id="instructions" class="instructions well">
+      <h1>How To Play</h1>
+      <br>
+      <br>
+      <ol>
+        <li><h4>Move your mouse where you want to place a tower!</h4></li>
+        <br>
+        <li><h4>Press the number that corresponds to the type of tower you want to buy!</h4></li>
+        <br>
+        <li><h4>Once you are done placing towers, press the play button to send the first wave!</h4></li>
+        <br>
+        <li><h4>Repeat as necessary!</h4></li>
+      </ol>
+      <br>
+      <button id="ready" class="btn btn-lg btn-block btn-warning" type="button" name="ready">Ready to play?</button>
+    </div>
+    <div id="canvas-holder" class=  "canvas-holder">
+      <canvas class="canvas" id="canvas0" width="1000" height="600"></canvas>
+      <canvas class="canvas" id="canvas1" width="1000" height="600"></canvas>
+      <canvas class="canvas" id="canvas2" width="1000" height="600"></canvas>
+      <canvas class="canvas" id="canvas3" width="1000" height="600"></canvas>
+    </div>
+    <div id="status-area" class="status-area">
+      <div id="stats"></div>
+      <button id="next-wave" class="btn btn-success next-wave" type="button" name="button">Next Wave</button>
+      <button id="play" class="btn btn-danger play" type="button" name="button">Play</button>
+    </div>
+    <div id="gameOver" class="gameOver well">
+      <div id="gameStats">
+      </div>
+      <button id="highScores" class="btn btn-lg btn-success" type="button" name="highscores">See Highscores</button>
+    </div>
+    <div class="well leaderboard">
+      <div id="leaderboard">
+      </div>
+      <button id="reset" class="btn btn-lg btn-warning" onclick="history.go(0)" type="button" name="reset">Play again?</button>
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="js/map.js" charset="utf-8"></script>
+    <script src="js/Creeps.js" charset="utf-8"></script>
+    <script src="js/Tower.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+/* add custom styles */
+body {
+  background: #1e1e1e url('../assets/screen-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.well {
+  display: block;
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+}
+
+.canvas-holder {
+  display: none;
+  position: relative;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 1000px;
+  height: 600px;
+  background-color: rgb(20, 20, 20);
+}
+
+.status-area {
+  background-color: rgb(20, 20, 20);
+  display: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 600px;
+  flex-flow: row wrap;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.status-area button {
+  height: 50px;
+  align-self: flex-end;
+  order: 2;
+  flex-grow: 1
+}
+
+.next-wave {
+  display: none;
+}
+
+#stats {
+  background-color: rgb(90, 90, 90);
+  width: 100%;
+  color: white;
+}
+
+.tower {
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  height: 94px;
+}
+
+.expensive {
+  background-color: red;
+  color: black;
+}
+
+.afford {
+  background-color: rgb(20, 20, 20);
+}
+
+#tower1 {
+  border: 5px solid rgb(160, 130, 60);
+  color: rgb(160, 130, 60);
+}
+
+#tower2 {
+  color: rgb(80, 30, 110);
+  border: 5px solid rgb(80, 30, 110);
+}
+
+#tower3 {
+  color: rgb(60, 70, 60);
+  border: 5px solid rgb(60, 70, 60);
+}
+
+#tower4 {
+  color: rgb(40, 80, 120);
+  border: 5px solid rgb(40, 80, 120);
+}
+
+#tower5 {
+  color: rgb(170, 50, 50);
+  border: 5px solid rgb(170, 50, 50);
+}
+
+.gameOver {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.askName {
+  display: none;
+}
+
+.instructions {
+  display: none;
+  text-align: left;
+}
+
+.instructions h1 {
+  text-align: center;
+}
+
+.leaderboard {
+  display: none;
+}

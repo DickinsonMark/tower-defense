@@ -15,7 +15,7 @@ This array is then iterated over and compared to each individual creep's current
 If the distance is less than the type of tower's range than the creep takes damage determined by the type of tower doing the damage.
 
 ## Deployed Site
-> [deployed Site](https://dickinsonmark.github.io/g30-projects/)
+> [Deployed Site](https://dickinsonmark.github.io/g30-projects/)
 
 ## To Run Locally
 

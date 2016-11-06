@@ -14,6 +14,9 @@ Each tower (when placed) gets placed into an array with the coords of its positi
 This array is then iterated over and compared to each individual creep's current location, to find the Euclidean distance between them.
 If the distance is less than the type of tower's range than the creep takes damage determined by the type of tower doing the damage.
 
+## Deployed Site
+> [deployed Site](https://dickinsonmark.github.io/g30-projects/)
+
 ## To Run Locally
 
 1. `Fork / Clone`

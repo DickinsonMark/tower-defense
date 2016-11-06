@@ -1,10 +1,9 @@
 // *** dependencies *** //
 
-var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
-var connect = require('gulp-connect');
-var runSequence = require('run-sequence');
+const gulp = require('gulp');
+const jscs = require('gulp-jscs');
+const connect = require('gulp-connect');
+const runSequence = require('run-sequence');
 
 
 // *** tasks *** ///
@@ -12,8 +11,7 @@ var runSequence = require('run-sequence');
 gulp.task('connect', function () {
   connect.server({
     root: './src/',
-    port: 8888,
-    livereload: true
+    port: 8888
   });
 });
 
@@ -32,15 +30,6 @@ gulp.task('javascript', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('jshint', function() {
-  return gulp.src('./src/**/*.js')
-    .pipe(jshint({
-      esnext: true
-    }))
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(jshint.reporter('fail'));
-});
-
 gulp.task('style', function() {
   return gulp.src('src/**/*.js')
     .pipe(jscs())
@@ -57,7 +46,6 @@ gulp.task('watch', function() {
 // *** defailt task *** //
 gulp.task('default', function() {
   runSequence(
-    ['jshint'],
     ['style'],
     ['watch'],
     ['connect']
